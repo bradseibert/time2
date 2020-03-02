@@ -1,4 +1,4 @@
-// class3.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// class3.cpp : This file contains the 'main' function. Program execution begins and ends there..
 //
 #include "Date2.h"
 #include "Time2.h"
