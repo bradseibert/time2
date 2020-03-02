@@ -26,7 +26,6 @@ public:
 	Date2& operator-(unsigned int);
 	Date2& operator+=(unsigned int);
 	int operator - (Date2);
-
 	Date2& addMonth(int);
 	Date2& printDate();
 

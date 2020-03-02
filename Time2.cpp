@@ -59,7 +59,7 @@ void Time2::setMin(int m)
 }
 void Time2::setSec(int s) 
 {
-	if (s >= 1 && s <= 59) {
+	if (s >= 0 && s <= 59) {
 		second = s;
 	}
 	else
@@ -155,15 +155,6 @@ Time2& Time2::subMin(int subM) {
 
 	return *this;
 }
-Time2& Time2::diff(Time2 rhs) 
-{
-	{
-		hour = abs(hour - rhs.getHour());
-		minute = abs(minute - rhs.getMin());
-		second = abs(second - rhs.getSec());
-		return *this;
-	}
-}
 bool Time2::operator == (Time2 rhs)
 {
 	if (hour == rhs.getHour() && minute == rhs.getMin() && second == rhs.getSec()) {
@@ -185,6 +176,11 @@ Time2& Time2::operator ++()
 		hour = 1;
 	}
 	return *this;
+}
+Time2 Time2::operator++(int) {
+	Time2 temp = *this;
+	++(*this);
+	return temp;
 }
 Time2& Time2::operator --() {
 	hour--;

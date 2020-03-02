@@ -16,9 +16,9 @@ public:
 	bool operator == (Time2);
 	bool operator != (Time2);
 	Time2& operator ++(); //pre-fix ++ (hour)
+	Time2 operator++(int);
 	Time2& operator --(); //prefix -- (hour)
 	Time2 operator --(int);
-	Time2& diff(Time2); //difference between the 2 times
 	Time2& printTime();
 	Time2& timeOfDay();
 	Time2& estTime();

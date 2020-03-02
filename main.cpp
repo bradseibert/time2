@@ -21,9 +21,10 @@ int main()
         cout << "Time Class Information:" << endl;
         cout << "________________________________" << endl;
         
-        Time2 test(5, 13, 5);
-        Time2 ans(3, 10, 3);
-        ans.timeOfDay().printTime();
+        Time2 test(13, 13, 5);
+        Time2 ans(24, 0, 0);
+        (++ans).printTime();
+
         
 
         //myBD.setAll(28, 2, 2021).setAll(30, 3, 2022);
