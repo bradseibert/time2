@@ -1,5 +1,2 @@
-﻿  Time2.cpp
-  main.cpp
-  Generating Code...
-C:\Users\Brads\Desktop\OOP files\class3\class3\Time2.cpp(32): warning C4715: 'Time2::setAll': not all control paths return a value
+﻿  main.cpp
   class3.vcxproj -> C:\Users\Brads\Desktop\OOP files\class3\Debug\class3.exe

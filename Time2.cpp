@@ -138,7 +138,7 @@ Time2& Time2::subHour(int subH)
 }
 Time2& Time2::subMin(int subM) {
 	minute = minute - subM;
-	if (minute > 0 && minute < 60) {
+	if (minute >= 0 && minute < 60) {
 		return *this;
 	}
 	else {
@@ -235,98 +235,122 @@ Time2& Time2::printTime()
 	switch (hour) {
 	case 1:
 		hour = 1;
+		cout << "Central Time" << endl;
 		cout << "AM";
 		break;
 	case 2:
 		hour = 2;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 3:
 		hour = 3;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 4:
 		hour = 4;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 5:
 		hour = 5;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 6:
 		hour = 6;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 7:
 		hour = 7;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 8:
 		hour = 8;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 9:
 		hour = 9;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 10:
 		hour = 10;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 11:
 		hour = 11;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	case 12:
 		hour = 12;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 13:
 		hour = 1;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 14:
 		hour = 2;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 15:
 		hour = 3;
+		cout << "Central Time" << endl;
 		cout << "PM "; 
 		break;
 	case 16:
 		hour = 4;
+		cout << "Central Time" << endl;
 		cout << "PM" ;
 		break;
 	case 17:
 		hour = 5;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 18:
 		hour = 6;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 19:
 		hour = 7;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 20:
 		hour = 8;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 21:
 		hour = 9;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 22:
 		hour = 10;
+		cout << "Central Time" << endl;
 		cout << "PM ";
 		break;
 	case 23:
 		hour = 11;
+		cout << "Central Time" << endl;
 		cout << "PM" ;
 		break;
 	case 24:
 		hour = 12;
+		cout << "Central Time" << endl;
 		cout << "AM ";
 		break;
 	}

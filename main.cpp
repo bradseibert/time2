@@ -22,8 +22,8 @@ int main()
         cout << "________________________________" << endl;
         
         Time2 test(13, 13, 5);
-        Time2 ans(24, 0, 0);
-        (++ans).printTime();
+        Time2 ans(1, 0, 45);
+        ans.timeOfDay().printTime();
 
         
 
